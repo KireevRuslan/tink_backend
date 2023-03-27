@@ -1,16 +1,26 @@
 package Dto;
 
+import org.springframework.validation.annotation.Validated;
 import lombok.Data;
 
-import java.util.List;
 
+@Validated
 @Data
-public class BotDto {
-    private Long id;
+public class BotDto{
+    public BotDto(int id,String url,String description,int[] tgChatIds){
+    this.id = id;
+    this.url = url;
+    this.description = description;
+    this.tgChatIds = tgChatIds;
+}
+    private int id;
     private String url;
     private String description;
-    private List<Long> tgChatIds;
+    private int[] tgChatIds;
 }
+
+
+
 
 
 
