@@ -1,6 +1,6 @@
 package app;
+
 import Dto.BotDto;
-import Dto.BotResponse;
 import Dto.NullDto;
 import io.swagger.annotations.ApiResponse;
 import jakarta.validation.Valid;
@@ -8,12 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
 @RequestMapping("/updates")
 public class BotController {
-
-
 
     @PostMapping(consumes = "application/json", produces = "application/json")
     public BotDto update(@Valid @RequestBody BotDto dataClass) {
