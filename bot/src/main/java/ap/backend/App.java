@@ -11,7 +11,7 @@ import com.pengrad.telegrambot.model.request.InlineKeyboardButton;
 import com.pengrad.telegrambot.model.request.InlineKeyboardMarkup;
 import com.pengrad.telegrambot.request.SendMessage;
 import com.pengrad.telegrambot.response.SendResponse;
-import TgBotClass.TgBot;
+
 
 import java.util.List;
 
@@ -21,8 +21,6 @@ import java.util.List;
  */
 public class App
 {
-    public static void main( String[] args ) {
-        new TgBot().startBot();
-    }
+
 
 }
