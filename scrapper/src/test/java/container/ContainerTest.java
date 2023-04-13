@@ -1,4 +1,4 @@
-package ru.tinkoff.edu.java.scrapper.container;
+package container;
 
 import liquibase.Contexts;
 import liquibase.LabelExpression;
@@ -17,6 +17,7 @@ import java.io.FileNotFoundException;
 import java.sql.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
+
 
 @SpringBootTest
 public class ContainerTest extends IntegrationEnvironment {

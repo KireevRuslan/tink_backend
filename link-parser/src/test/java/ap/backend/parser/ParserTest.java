@@ -4,11 +4,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-import ru.tinkoff.edu.java.parser.links.GitHubLinkParse;
-import ru.tinkoff.edu.java.parser.links.LinkParse;
-import ru.tinkoff.edu.java.parser.links.StackOverflowLinkParse;
-import ru.tinkoff.edu.java.parser.result.GitHubResultRecord;
-import ru.tinkoff.edu.java.parser.result.StackOverflowResultRecord;
+import links.GitHubLinkParse;
+import links.LinkParse;
+import links.Parser;
+import links.StackOverflowLinkParse;
+import result.GitHubResultRecord;
+import result.StackOverflowResultRecord;
 
 import static org.junit.jupiter.api.Assertions.*;
 
