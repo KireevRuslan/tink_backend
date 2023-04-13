@@ -38,4 +38,4 @@ public class ClientConfig {
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, "application/json")
                 .clientConnector(new ReactorClientHttpConnector(httpClient))
                 .build();
-    }
+    }}

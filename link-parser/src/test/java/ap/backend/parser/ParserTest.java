@@ -1,4 +1,4 @@
-package ru.tinkoff.edu.java.parser;
+package ap.backend.parser;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
