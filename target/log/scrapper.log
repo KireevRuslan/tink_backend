@@ -171,3 +171,18 @@ Caused by: java.io.FileNotFoundException: class path resource [configuration/Swa
 2023-04-18 09:31:34,373 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
 2023-04-18 09:31:34,455 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
 2023-04-18 09:31:34,535 INFO a.b.ScrapperApplication [restartedMain] Started ScrapperApplication in 16.207 seconds (process running for 19.612)
+2023-04-18 10:08:28,658 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-18 10:08:28,760 INFO a.b.ScrapperApplication [restartedMain] Starting ScrapperApplication using Java 18.0.2 with PID 9224 (C:\Users\rusla\OneDrive\Документы\GitHub\tink_backend\scrapper\target\classes started by rusla in C:\Users\rusla\OneDrive\Документы\GitHub\tink_backend)
+2023-04-18 10:08:28,763 INFO a.b.ScrapperApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 10:08:28,869 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18 10:08:28,870 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18 10:08:31,758 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2023-04-18 10:08:31,782 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2023-04-18 10:08:31,784 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-04-18 10:08:31,785 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-04-18 10:08:31,926 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-18 10:08:31,927 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3055 ms
+2023-04-18 10:08:35,075 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2023-04-18 10:08:35,103 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2023-04-18 10:08:35,154 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-18 10:08:35,175 INFO a.b.ScrapperApplication [restartedMain] Started ScrapperApplication in 7.126 seconds (process running for 8.42)
