@@ -12,4 +12,3 @@ import java.net.URI;
 public class RemoveLinkRequest {
     private URI link;
 }
-

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import exception.BadRequestException;
+import exception.DataAlreadyExistException;
 import exception.DataNotFoundException;
 import model.response.ApiErrorResponse;
 
@@ -19,21 +20,23 @@ public class ControllerExceptionHandler {
         return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_FOUND);
     }
 
-    @ExceptionHandler(BadRequestException.class)
+    @ExceptionHandler({
+            BadRequestException.class,
+            DataAlreadyExistException.class})
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ResponseEntity<ApiErrorResponse> handle(BadRequestException e) {
+    public ResponseEntity<ApiErrorResponse> handle(RuntimeException e) {
         ApiErrorResponse exceptionResponse = getApiErrorResponse(e, "400", "Некорректные параметры запроса");
         return new ResponseEntity<>(exceptionResponse, HttpStatus.BAD_REQUEST);
     }
 
     private ApiErrorResponse getApiErrorResponse(Exception e, String code, String description) {
         ApiErrorResponse exceptionResponse = ApiErrorResponse.builder()
-                                                             .code(code)
-                                                             .description(description)
-                                                             .exceptionName(e.getClass()
-                                                                             .getName())
-                                                             .exceptionMessage(e.getMessage())
-                                                             .build();
+                .code(code)
+                .description(description)
+                .exceptionName(e.getClass()
+                        .getName())
+                .exceptionMessage(e.getMessage())
+                .build();
         for (StackTraceElement stackTraceElement : e.getStackTrace()) {
             exceptionResponse.addStacktraceItem(stackTraceElement.toString());
         }

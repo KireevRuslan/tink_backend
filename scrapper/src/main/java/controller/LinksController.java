@@ -11,10 +11,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
+import exception.BadRequestException;
 import model.request.AddLinkRequest;
 import model.request.RemoveLinkRequest;
 import model.response.LinkResponse;
 import model.response.ListLinksResponse;
+import service.jdbc.JdbcLinksService;
 
 import java.net.URI;
 import java.util.ArrayList;
@@ -23,6 +25,7 @@ import java.util.ArrayList;
 @RequiredArgsConstructor
 public class LinksController implements Links {
     private final HttpServletRequest request;
+    private final JdbcLinksService jdbcLinksService;
 
     @Override
     public ResponseEntity<ListLinksResponse> getLinks(
@@ -34,12 +37,10 @@ public class LinksController implements Links {
             Long tgChatId) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            ListLinksResponse listLinksResponse = new ListLinksResponse();
-            listLinksResponse.setLinks(new ArrayList<>());
-            listLinksResponse.setSize(12);
-            return new ResponseEntity<>(listLinksResponse, HttpStatus.OK);
+            ListLinksResponse links = jdbcLinksService.findAllLinksByTgChatId(tgChatId);
+            return new ResponseEntity<>(links, HttpStatus.OK);
         }
-        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        throw new BadRequestException("Некоректный запрос");
     }
 
     @Override
@@ -60,14 +61,11 @@ public class LinksController implements Links {
             AddLinkRequest body) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            LinkResponse build = LinkResponse.builder()
-                    .id(1L)
-                    .url(URI.create("https://google.com"))
-                    .build();
-            return new ResponseEntity<>(build, HttpStatus.OK);
+            LinkResponse response = jdbcLinksService.addLink(tgChatId, body);
+            return new ResponseEntity<>(response, HttpStatus.OK);
         }
 
-        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        throw new BadRequestException("Некоректный запрос");
     }
 
     @Override
@@ -88,13 +86,11 @@ public class LinksController implements Links {
             RemoveLinkRequest body) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
-            LinkResponse build = LinkResponse.builder()
-                    .id(1L)
-                    .url(body.getLink())
-                    .build();
-            return new ResponseEntity<>(build, HttpStatus.OK);
+            LinkResponse response = jdbcLinksService.removeLink(tgChatId, body);
+            return new ResponseEntity<>(response, HttpStatus.OK);
         }
 
-        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        throw new BadRequestException("Некоректный запрос");
     }
 }
+

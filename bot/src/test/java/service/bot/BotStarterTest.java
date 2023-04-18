@@ -10,11 +10,11 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
-import ru.tinkoff.edu.java.bot.configuration.TelegramConfig;
-import ru.tinkoff.edu.java.bot.service.LinkService;
-import ru.tinkoff.edu.java.bot.service.bot.BotStarter;
-import ru.tinkoff.edu.java.bot.service.commands.CommandList;
-import ru.tinkoff.edu.java.bot.service.commands.impl.*;
+import configuration.TelegramConfig;
+import service.LinkService;
+import service.bot.BotStarter;
+import service.commands.CommandList;
+import service.commands.impl.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
@@ -48,15 +48,15 @@ class BotStarterTest {
         when(update.message()).thenReturn(message);
         when(message.chat()).thenReturn(chat);
         when(update.message()
-                   .chat()
-                   .id()).thenReturn(1L);
+                .chat()
+                .id()).thenReturn(1L);
 
         SendMessage sendMessage = botStarter.handleByCommand(update, message);
         assertAll(
                 () -> assertThat(sendMessage.getParameters()).extracting("chat_id")
-                                                             .isEqualTo(1L),
+                        .isEqualTo(1L),
                 () -> assertThat(sendMessage.getParameters()).extracting("text")
-                                                             .isEqualTo(listCommandAnswer)
+                        .isEqualTo(listCommandAnswer)
         );
     }
 
@@ -68,15 +68,15 @@ class BotStarterTest {
         when(update.message()).thenReturn(message);
         when(message.chat()).thenReturn(chat);
         when(update.message()
-                   .chat()
-                   .id()).thenReturn(1L);
+                .chat()
+                .id()).thenReturn(1L);
 
         SendMessage sendMessage = botStarter.handleByCommand(update, message);
         assertAll(
                 () -> assertThat(sendMessage.getParameters()).extracting("chat_id")
-                                                             .isEqualTo(1L),
+                        .isEqualTo(1L),
                 () -> assertThat(sendMessage.getParameters()).extracting("text")
-                                                             .isEqualTo(unknownCommand)
+                        .isEqualTo(unknownCommand)
         );
     }
 }

@@ -1,5 +1,4 @@
 package configuration;
-
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
@@ -19,7 +18,7 @@ public class SwaggerConfig {
                                 "<a href=\"https://gist.github.com/sanyarnd/52a78a01fa9ec234c8ad50fbc5ecc9e4\" target=\"_blank\">specification</a>")
                         .version("1.0.0")
                         .contact(new Contact()
-                                .name("Kireev Ruslan")
-                                .email("ruslanbana@gmail.com")));
+                                .name("Vladislav Gadetov")
+                                .email("vlad-nijakun@mail.ru")));
     }
 }
