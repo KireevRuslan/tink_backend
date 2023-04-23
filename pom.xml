@@ -61,8 +61,15 @@
   
   <dependencyManagement>
   <dependencies>
-                
-    
+    <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.24.2</version>
+      <scope>test</scope>
+    </dependency>
+
+
     <dependency>
     <groupId>org.jetbrains</groupId>
     <artifactId>annotations</artifactId>
@@ -90,7 +97,11 @@
     
     
     </dependency>
-              
+    <dependency>
+      <groupId>com.github.pengrad</groupId>
+      <artifactId>java-telegram-bot-api</artifactId>
+      <version>6.6.0</version>
+    </dependency>
  <dependency>
   <groupId>org.springframework.cloud</groupId>
   <artifactId>spring-cloud-dependencies</artifactId>
