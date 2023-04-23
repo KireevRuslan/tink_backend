@@ -20,7 +20,7 @@ import container.IntegrationEnvironment;
 import exception.DataAlreadyExistException;
 import exception.DataNotFoundException;
 import model.response.TgChatResponse;
-import repository.imp.TgChatRepositoryImpl;
+import repository.jdbc.JdbcTgChatRepository;
 import service.TgChatService;
 import service.jdbc.JdbcTgChatService;
 
@@ -51,7 +51,7 @@ class JdbcTgChatServiceTest extends IntegrationEnvironment {
         jdbcTemplate = new JdbcTemplate(
                 new DriverManagerDataSource(url, username, password));
         tgChatService = new JdbcTgChatService(
-                new TgChatRepositoryImpl(jdbcTemplate));
+                new JdbcTgChatRepository(jdbcTemplate));
 
         try (Connection connection = DriverManager.getConnection(url, username, password);
              Database database = DatabaseFactory.getInstance()

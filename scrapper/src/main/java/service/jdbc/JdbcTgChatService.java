@@ -1,7 +1,6 @@
 package service.jdbc;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import exception.DataAlreadyExistException;
 import exception.DataNotFoundException;
@@ -10,7 +9,6 @@ import model.response.TgChatResponse;
 import repository.TgChatRepository;
 import service.TgChatService;
 
-@Service
 @RequiredArgsConstructor
 public class JdbcTgChatService implements TgChatService {
     private final TgChatRepository tgChatRepository;

@@ -18,7 +18,6 @@ import java.sql.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
-
 @SpringBootTest
 public class ContainerTest extends IntegrationEnvironment {
     @Value("${spring.datasource.url}")
@@ -57,7 +56,7 @@ public class ContainerTest extends IntegrationEnvironment {
 
             assertAll("container start test",
                     () -> assertThat(rs.getLong("chat_id")).isEqualTo(333),
-                    () -> assertThat(rs.getString("url")).isEqualTo("Gaga.url")
+                    () -> assertThat(rs.getString("url")).isEqualTo("https://github.com/Gadetych/my-first-blog")
             );
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());

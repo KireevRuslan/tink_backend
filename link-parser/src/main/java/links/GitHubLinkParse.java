@@ -1,10 +1,7 @@
 package links;
 
-import links.LinkParse;
 import result.GitHubResultRecord;
 import result.ParseResult;
-
-import java.util.Objects;
 
 public final class GitHubLinkParse extends LinkParse {
     @Override

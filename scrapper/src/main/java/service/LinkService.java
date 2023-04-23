@@ -1,12 +1,14 @@
 package service;
 
-import dto.LinkResponseDto;
+import model.dto.LinkResponseDto;
+import model.dto.UpdatesDto;
 import model.request.AddLinkRequest;
 import model.request.RemoveLinkRequest;
+import model.response.GitHubRepositoryInfoResponse;
 import model.response.LinkResponse;
 import model.response.ListLinksResponse;
+import model.response.StackOverflowQuestionInfoResponse;
 
-import java.time.OffsetDateTime;
 import java.util.List;
 
 public interface LinkService {
@@ -18,7 +20,12 @@ public interface LinkService {
 
     List<LinkResponseDto> findAllOldestLinksByLastCheck();
 
+    UpdatesDto findUpdatesByLinkIdAndLinkType(Long linkId, String type);
+
     void setLastCheck(Long id);
 
-    void setLastUpdate(Long id, OffsetDateTime update);
+
+    void setStackOverflowLastUpdate(Long id, StackOverflowQuestionInfoResponse response);
+
+    void setGitHubLastUpdate(Long id, GitHubRepositoryInfoResponse update);
 }
