@@ -15,10 +15,10 @@ public class SwaggerConfig {
                 .info(new Info()
                         .title("Bot API")
                         .description("Endpoints implemented according to " +
-                                "<a href=\"https://gist.github.com/sanyarnd/52a78a01fa9ec234c8ad50fbc5ecc9e4\" target=\"_blank\">specification</a>")
+                                "<a href=\"https://github.com/KireevRuslan/TinkKontest\" target=\"_blank\">specification</a>")
                         .version("1.0.0")
                         .contact(new Contact()
-                                .name("Vladislav Gadetov")
-                                .email("vlad-nijakun@mail.ru")));
+                                .name("Ruslan Kireev")
+                                .email("ruslanbana@gmail.com")));
     }
 }
