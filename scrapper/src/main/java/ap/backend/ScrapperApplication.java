@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import configuration.ApplicationConfig;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}
-//        , scanBasePackages = {"ru.tinkoff.edu.java.scrapper.*"}
+
 )
 @EnableConfigurationProperties(ApplicationConfig.class)
 public class ScrapperApplication {
