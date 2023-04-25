@@ -56,7 +56,7 @@ public class ContainerTest extends IntegrationEnvironment {
 
             assertAll("container start test",
                     () -> assertThat(rs.getLong("chat_id")).isEqualTo(333),
-                    () -> assertThat(rs.getString("url")).isEqualTo("https://github.com/Gadetych/my-first-blog")
+                    () -> assertThat(rs.getString("url")).isEqualTo("https://github.com/cnapagoda/carbon-governance")
             );
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
