@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import configuration.ApplicationConfig;
 import service.bot.BotStarter;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"ru.tinkoff.edu.java.bot.*"})
 @EnableConfigurationProperties(ApplicationConfig.class)
 public class BotApplication {
     public static void main(String[] args) {
