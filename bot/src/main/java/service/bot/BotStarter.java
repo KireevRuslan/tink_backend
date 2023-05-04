@@ -21,7 +21,7 @@ public class BotStarter implements Bot {
     private final CommandList commandList;
 
     public BotStarter(TelegramConfig telegramConfig, CommandList commandList) {
-        this.bot = new TelegramBot("5810088925:AAHRFFT26JpExA27t927RMNh7zGdYwtImk0");
+        this.bot = new TelegramBot(telegramConfig.token());
         this.commandList = commandList;
         botCommands();
     }

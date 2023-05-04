@@ -66,10 +66,10 @@ public class RabbitMQConfig {
     @Bean
     public ClassMapper classMapper() {
         Map<String, Class<?>> mappings = new HashMap<>();
-        mappings.put("ru.tinkoff.edu.java.scrapper.model.request.LinkUpdateRequest", LinkUpdateRequest.class);
+        mappings.put("model.request.LinkUpdateRequest", LinkUpdateRequest.class);
 
         DefaultClassMapper classMapper = new DefaultClassMapper();
-        classMapper.setTrustedPackages("ru.tinkoff.edu.java.scrapper.model.request.*");
+        classMapper.setTrustedPackages("model.request.*");
         classMapper.setIdClassMapping(mappings);
         return classMapper;
     }
