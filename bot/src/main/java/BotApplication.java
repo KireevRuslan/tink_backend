@@ -1,12 +1,10 @@
-package ap.backend;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import configuration.ApplicationConfig;
 import service.bot.BotStarter;
 
-@SpringBootApplication(scanBasePackages = {"bot.*"})
+@SpringBootApplication
 @EnableConfigurationProperties(ApplicationConfig.class)
 public class BotApplication {
     public static void main(String[] args) {

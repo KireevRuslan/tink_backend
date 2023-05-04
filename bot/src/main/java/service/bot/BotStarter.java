@@ -1,5 +1,4 @@
 package service.bot;
-
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.UpdatesListener;
 import com.pengrad.telegrambot.model.BotCommand;
@@ -9,6 +8,7 @@ import com.pengrad.telegrambot.request.SendMessage;
 import com.pengrad.telegrambot.request.SetMyCommands;
 import org.springframework.stereotype.Service;
 import configuration.TelegramConfig;
+import service.bot.Bot;
 import service.commands.CommandList;
 import service.commands.Command;
 import service.commands.impl.UnknownCommand;
@@ -21,7 +21,7 @@ public class BotStarter implements Bot {
     private final CommandList commandList;
 
     public BotStarter(TelegramConfig telegramConfig, CommandList commandList) {
-        this.bot = new TelegramBot(telegramConfig.token());
+        this.bot = new TelegramBot("5810088925:AAHRFFT26JpExA27t927RMNh7zGdYwtImk0");
         this.commandList = commandList;
         botCommands();
     }
