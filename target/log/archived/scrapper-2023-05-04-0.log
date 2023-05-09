@@ -1,0 +1,36 @@
+2023-05-04 12:19:51,173 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-05-04 12:19:51,295 INFO a.b.ScrapperApplication [restartedMain] Starting ScrapperApplication using Java 18.0.2 with PID 7692 (C:\Users\rusla\OneDrive\Документы\GitHub\tink_backend\scrapper\target\classes started by rusla in C:\Users\rusla\OneDrive\Документы\GitHub\tink_backend)
+2023-05-04 12:19:51,298 INFO a.b.ScrapperApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-05-04 12:19:51,536 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-04 12:19:51,539 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-04 12:19:54,807 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2023-05-04 12:19:54,827 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2023-05-04 12:19:54,830 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-05-04 12:19:54,834 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-05-04 12:19:55,029 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-05-04 12:19:55,030 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3488 ms
+2023-05-04 12:19:55,384 WARN j.p.spi [restartedMain] jakarta.persistence.spi::No valid providers found.
+2023-05-04 12:20:00,219 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2023-05-04 12:20:00,243 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2023-05-04 12:20:00,303 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2023-05-04 12:20:00,361 INFO a.b.ScrapperApplication [restartedMain] Started ScrapperApplication in 9.873 seconds (process running for 11.463)
+2023-05-04 12:20:08,065 INFO o.a.c.c.C.[.[.[/] [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-04 12:20:08,068 INFO o.s.w.s.DispatcherServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-05-04 12:20:08,077 INFO o.s.w.s.DispatcherServlet [http-nio-8081-exec-1] Completed initialization in 6 ms
+2023-05-04 12:20:09,244 INFO o.s.a.AbstractOpenApiResource [http-nio-8081-exec-9] Init duration for springdoc-openapi is: 322 ms
+2023-05-04 14:08:15,135 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-05-04 14:08:15,232 INFO a.b.ScrapperApplication [restartedMain] Starting ScrapperApplication using Java 18.0.2 with PID 8732 (C:\Users\rusla\OneDrive\Документы\GitHub\tink_backend\scrapper\target\classes started by rusla in C:\Users\rusla\OneDrive\Документы\GitHub\tink_backend)
+2023-05-04 14:08:15,235 INFO a.b.ScrapperApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-05-04 14:08:15,397 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-04 14:08:15,399 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-04 14:08:18,433 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2023-05-04 14:08:18,454 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2023-05-04 14:08:18,456 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-05-04 14:08:18,457 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-05-04 14:08:18,693 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-05-04 14:08:18,694 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3293 ms
+2023-05-04 14:08:19,027 WARN j.p.spi [restartedMain] jakarta.persistence.spi::No valid providers found.
+2023-05-04 14:08:22,678 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2023-05-04 14:08:22,700 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2023-05-04 14:08:22,740 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2023-05-04 14:08:22,764 INFO a.b.ScrapperApplication [restartedMain] Started ScrapperApplication in 8.251 seconds (process running for 10.313)

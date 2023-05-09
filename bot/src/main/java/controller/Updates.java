@@ -16,9 +16,6 @@ import model.request.LinkUpdateRequest;
 import model.response.ApiErrorResponse;
 
 @Validated
-
-
-
 public interface Updates {
     @Operation(summary = "Отправить обновление")
     @ApiResponses(value = {
@@ -41,5 +38,6 @@ public interface Updates {
                     schema = @Schema())
             @Valid
             @RequestBody
-            LinkUpdateRequest body);
+            LinkUpdateRequest body
+    );
 }

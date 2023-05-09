@@ -4,6 +4,7 @@ import com.pengrad.telegrambot.model.Chat;
 import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.request.SendMessage;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -11,9 +12,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import service.LinkService;
 import service.commands.impl.ListCommand;
-
-import java.util.List;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.mockito.Mockito.when;
@@ -39,12 +37,13 @@ class ListCommandTest {
         when(chat.id()).thenReturn(1L);
 
         SendMessage handle = listCommand.handle(update);
-        assertAll(() -> assertThat(handle.getParameters()).isNotNull()
-                                                          .extracting("parse_mode")
-                                                          .isEqualTo("HTML"),
+        assertAll(
                 () -> assertThat(handle.getParameters()).isNotNull()
-                                                        .extracting("text")
-                                                        .isEqualTo("some_string")
+                        .extracting("parse_mode")
+                        .isEqualTo("HTML"),
+                () -> assertThat(handle.getParameters()).isNotNull()
+                        .extracting("text")
+                        .isEqualTo("some_string")
         );
     }
 
@@ -58,12 +57,13 @@ class ListCommandTest {
         when(chat.id()).thenReturn(1L);
 
         SendMessage handle = listCommand.handle(update);
-        assertAll(() -> assertThat(handle.getParameters()).isNotNull()
-                                                          .extracting("parse_mode")
-                                                          .isEqualTo("HTML"),
+        assertAll(
                 () -> assertThat(handle.getParameters()).isNotNull()
-                                                        .extracting("text")
-                                                        .isEqualTo(listCommandAnswer)
+                        .extracting("parse_mode")
+                        .isEqualTo("HTML"),
+                () -> assertThat(handle.getParameters()).isNotNull()
+                        .extracting("text")
+                        .isEqualTo(listCommandAnswer)
         );
     }
 }

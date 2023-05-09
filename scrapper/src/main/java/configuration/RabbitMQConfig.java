@@ -1,7 +1,11 @@
 package configuration;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.amqp.core.*;
+import org.springframework.amqp.core.Binding;
+import org.springframework.amqp.core.BindingBuilder;
+import org.springframework.amqp.core.DirectExchange;
+import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.core.QueueBuilder;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -39,16 +43,16 @@ public class RabbitMQConfig {
     @Bean
     public Queue messageQueue() {
         return QueueBuilder.durable(config.queryName())
-                .withArgument("x-dead-letter-exchange", "")
-                .withArgument("x-dead-letter-routing-key", config.queryName() + ".dlq")
-                .build();
+            .withArgument("x-dead-letter-exchange", "")
+            .withArgument("x-dead-letter-routing-key", config.queryName() + ".dlq")
+            .build();
     }
 
     @Bean
     public Binding binding() {
         return BindingBuilder.bind(messageQueue())
-                .to(directExchange())
-                .withQueueName();
+            .to(directExchange())
+            .withQueueName();
     }
 
     @Bean

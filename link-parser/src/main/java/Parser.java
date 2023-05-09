@@ -1,11 +1,10 @@
 
 
-import links.LinkParse;
-import result.ParseResult;
-
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import links.LinkParse;
+import result.ParseResult;
 
 public class Parser {
     private LinkParse linkParse;

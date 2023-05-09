@@ -14,8 +14,12 @@ import configuration.TelegramConfig;
 import service.LinkService;
 import service.bot.BotStarter;
 import service.commands.CommandList;
-import service.commands.impl.*;
-
+import service.commands.impl.HelpCommand;
+import service.commands.impl.ListCommand;
+import service.commands.impl.StartCommand;
+import service.commands.impl.TrackCommand;
+import service.commands.impl.UnknownCommand;
+import service.commands.impl.UntrackCommand;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.mockito.Mockito.when;
@@ -32,7 +36,8 @@ class BotStarterTest {
             new HelpCommand(),
             new TrackCommand(),
             new UntrackCommand(),
-            new ListCommand(new LinkService()));
+            new ListCommand(new LinkService())
+    );
     @Mock
     private Update update;
     @Mock
