@@ -20,6 +20,13 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.micrometer/micrometer-core -->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-core</artifactId>
+            <version>1.11.0</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
