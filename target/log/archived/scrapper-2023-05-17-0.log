@@ -1,0 +1,10 @@
+2023-05-17 00:10:20,436 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-05-17 00:10:20,827 INFO a.b.ScrapperApplication [restartedMain] Starting ScrapperApplication using Java 18.0.2 with PID 8036 (C:\Users\rusla\OneDrive\Документы\GitHub\tink_backend\scrapper\target\classes started by rusla in C:\Users\rusla\OneDrive\Документы\GitHub\tink_backend)
+2023-05-17 00:10:20,836 INFO a.b.ScrapperApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-05-17 00:10:21,036 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-17 00:10:21,039 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-17 00:10:29,421 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2023-05-17 00:10:29,934 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8892 ms
+2023-05-17 00:10:38,621 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-05-17 00:10:38,699 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2023-05-17 00:10:38,732 INFO a.b.ScrapperApplication [restartedMain] Started ScrapperApplication in 20.559 seconds (process running for 23.739)

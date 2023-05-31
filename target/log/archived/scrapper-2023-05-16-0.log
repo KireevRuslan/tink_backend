@@ -1,0 +1,16 @@
+2023-05-16 23:51:10,107 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-05-16 23:51:10,303 INFO a.b.ScrapperApplication [restartedMain] Starting ScrapperApplication using Java 18.0.2 with PID 10844 (C:\Users\rusla\OneDrive\Документы\GitHub\tink_backend\scrapper\target\classes started by rusla in C:\Users\rusla\OneDrive\Документы\GitHub\tink_backend)
+2023-05-16 23:51:10,305 INFO a.b.ScrapperApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-05-16 23:51:10,462 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-16 23:51:10,463 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-16 23:51:15,120 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2023-05-16 23:51:15,176 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2023-05-16 23:51:15,179 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2023-05-16 23:51:15,180 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-05-16 23:51:15,369 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-05-16 23:51:15,370 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4890 ms
+2023-05-16 23:51:15,779 WARN j.p.spi [restartedMain] jakarta.persistence.spi::No valid providers found.
+2023-05-16 23:51:22,546 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2023-05-16 23:51:22,572 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2023-05-16 23:51:22,631 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2023-05-16 23:51:22,657 INFO a.b.ScrapperApplication [restartedMain] Started ScrapperApplication in 14.153 seconds (process running for 18.551)
