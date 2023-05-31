@@ -1,17 +1,0 @@
-Êþº¾   =   src/main/java/ap/backend/App  java/lang/Object <init> ()V Code 	 java/lang/Error Unresolved compilation problems: 
-	The type java.lang.Object cannot be resolved. It is indirectly referenced from required .class files
-	The type java.lang.String cannot be resolved. It is indirectly referenced from required .class files
-	The declared package "arsi.backend" does not match the expected package "src.main.java.arsi.backend"
-	Implicit super constructor Object() is undefined for default constructor. Must define an explicit constructor
-	String cannot be resolved to a type
-	System cannot be resolved
-
-     (Ljava/lang/String;)V LineNumberTable LocalVariableTable this  Lsrc/main/java/ap/backend/App; main ([LString;)V  bUnresolved compilation problems: 
-	String cannot be resolved to a type
-	System cannot be resolved
- 
-SourceFile App.java  String MissingTypes !               4     
-» Y
-· ¿                   
-     	       *     
-» Y· ¿           	                  
